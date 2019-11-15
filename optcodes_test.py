@@ -121,9 +121,9 @@ OPCODES = {
 'OP_INVALIDOPCODE' : 0xff
 }
 
-def decode_to_optcodes(hex_string):
+def decode_to_optcodes(hlist):
     output = ''
-    for val in hex_string:
+    for val in hlist:
         for key, value in OPCODES.items():
             opt = val
             if value == val:
